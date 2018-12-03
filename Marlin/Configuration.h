@@ -781,7 +781,7 @@
 #define Y_MIN_POS 0
 #define Z_MIN_POS -3
 #define X_MAX_POS 248 //maximum
-#define Y_MAX_POS 290 //maximum
+#define Y_MAX_POS 250 //maximum
 #define Z_MAX_POS 200
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
@@ -908,7 +908,7 @@
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
   #define ABL_PROBE_PT_1_X 24
-  #define ABL_PROBE_PT_1_Y 272
+  #define ABL_PROBE_PT_1_Y 250
   #define ABL_PROBE_PT_2_X 24
   #define ABL_PROBE_PT_2_Y 30
   #define ABL_PROBE_PT_3_X 224
