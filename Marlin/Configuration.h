@@ -803,7 +803,7 @@
 //XXX
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 20
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -814,9 +814,6 @@
 // Feedrate (mm/m) for the "accurate" probe of each point
 #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
 
-// possibly old
-// Use double touch for probing
-#define PROBE_DOUBLE_TOUCH
 // The number of probes to perform at each point.
 //   Set to 2 for a fast/slow probe, using the second probe result.
 //   Set to 3 or more for slow probes, averaging the results.
@@ -1083,20 +1080,6 @@
 
   #endif
 
-<<<<<<< HEAD
-#elif ENABLED(AUTO_BED_LEVELING_3POINT)
-
-  // 3 arbitrary points to probe.
-  // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 24
-  #define ABL_PROBE_PT_1_Y 250
-  #define ABL_PROBE_PT_2_X 24
-  #define ABL_PROBE_PT_2_Y 30
-  #define ABL_PROBE_PT_3_X 224
-  #define ABL_PROBE_PT_3_Y 30
-
-=======
->>>>>>> origin/1.1.x
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
   //===========================================================================
@@ -1121,7 +1104,7 @@
   //=================================== Mesh ==================================
   //===========================================================================
 
-  #define MESH_INSET 10          // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 20          // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 3    // Don't use more than 7 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
@@ -1140,6 +1123,16 @@
   //#define PROBE_PT_2_Y 20
   //#define PROBE_PT_3_X 170
   //#define PROBE_PT_3_Y 20
+
+  // 3 arbitrary points to probe.
+  // A simple cross-product is used to estimate the plane of the bed.
+  // Old Stuff
+  // #define PROBE_PT_1_X 24
+  // #define PROBE_PT_1_Y 250
+  // #define PROBE_PT_2_X 24
+  // #define PROBE_PT_2_Y 30
+  // #define PROBE_PT_3_X 224
+  // #define PROBE_PT_3_Y 30
 #endif
 
 /**
