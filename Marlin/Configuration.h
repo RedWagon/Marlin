@@ -536,7 +536,7 @@
   #define DELTA_DIAGONAL_ROD 290.8 // mm
 
   // height from z=0 to home position
-  #define DELTA_HEIGHT 388.8 // get this value from auto calibrate
+  #define DELTA_HEIGHT 380.7 // get this value from auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // get these from auto calibrate
 
@@ -739,7 +739,7 @@
 #define DEFAULT_XJERK                 10.0
 #define DEFAULT_YJERK                 DEFAULT_XJERK
 #define DEFAULT_ZJERK                 DEFAULT_XJERK // Must be same as XY for delta
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_EJERK                 50
 
 /**
  * S-Curve Acceleration
