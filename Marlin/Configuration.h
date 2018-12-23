@@ -706,7 +706,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          {200, 200, 200, 200}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 500, 35 }    // (mm/sec)
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -739,7 +739,7 @@
 #define DEFAULT_XJERK                 10.0
 #define DEFAULT_YJERK                 DEFAULT_XJERK
 #define DEFAULT_ZJERK                 DEFAULT_XJERK // Must be same as XY for delta
-#define DEFAULT_EJERK                 50
+#define DEFAULT_EJERK                 5
 
 /**
  * S-Curve Acceleration
